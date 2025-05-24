@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Citrus Bloom Matcha</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Roboto+Flex:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/floretdream.css">
+    <link href="../css/StyleSheet.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <img src="../images/noka-logo.png" alt="NOKA Logo" class="logo" />
+            <nav class="nav-links">
+                <a href="../index.html">Home</a>
+                <!--About-->
+                <div class="nav-dropdown">
+                    <button class="dropbtn about-btn">
+                        About <i id="about-icon" class="fas fa-plus"></i>
+                    </button>
+                    <div class="dropdown-content about-dropdown">
+                        <a href="AboutNoka.html">About Noka</a>
+                        <a href="AboutMatcha.html">About the Matcha</a>
+                        <a href="aboutus.html">About Us</a>
+                    </div>
+                </div>
+                <!-- Products dropdown -->
+                <div class="nav-dropdown">
+                    <button class="dropbtn products-btn">
+                        Products <i id="products-icon" class="fas fa-plus"></i>
+                    </button>
+                    <div class="dropdown-content products-dropdown">
+                        <a href="main_product.html">All Products</a>
+                        <a href="recipeguide.html">Recipe Guide</a>
+                        <a href="gallery.html">Gallery</a>
+
+                    </div>
+                </div>
+
+                <a href="comparison.html">Comparison</a>
+                <div class="nav-dropdown">
+                    <button class="dropbtn contacts-btn">
+                        Contacts <i id="contacts-icon" class="fas fa-plus"></i>
+                    </button>
+                    <div class="dropdown-content contacts-dropdown">
+
+                        <a href="contact.html">Contact</a>
+                        <a href="faq.html">FAQ</a>
+                        <a href="socmed.html">Social Media</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="product-detail-container">
+        <!-- Left Side: Main Image and Thumbnails -->
+        <div class="product-left">
+            <!-- Main Image -->
+            <img id="main-product-img" src="../images/Citrus Bloom (2).jpg" alt="Citrus Bloom Matcha">
+
+            <!-- Thumbnail Slider -->
+            <div class="thumbnail-slider-wrapper">
+                <button class="slider-arrow" id="slide-left">&#10094;</button>
+                <div class="thumbnail-slider" id="thumbnail-slider">
+
+                    <!-- Citrus Bloom Matcha -->
+                    <img src="../images/Citrus Bloom (2).jpg" class="thumbnail selected"
+                         data-name="Citrus Bloom Matcha"
+                         data-kcal="16oz · 222 kcal"
+                         data-desc="A bright twist on tradition — this blend pairs our signature matcha with a hint of yuzu and lemon for a crisp, refreshing finish. Light and energizing without the buzz, it’s the perfect sip for sunny days.">
+
+                    <!-- Matcha -->
+                    <img src="../images/matcha.jpg" class="thumbnail"
+                         data-name="Matcha"
+                         data-kcal="16oz · 190 kcal"
+                         data-desc="Pure and robust — this ceremonial-grade matcha delivers a bold, grassy note and rich umami depth. Smooth and grounding, it’s a timeless favorite crafted for those who savor the ritual of tradition.">
+
+                    <!-- Houjicha -->
+                    <img src="../images/houjicha.jpg" class="thumbnail"
+                         data-name="Houjicha"
+                         data-kcal="16oz · 130 kcal"
+                         data-desc="Toasty and mellow — this roasted green tea offers a nutty aroma and earthy flavor with lower caffeine. Comforting and aromatic, it’s an ideal choice for relaxing afternoons or quiet evenings.">
+
+                    <!-- Genmaicha -->
+                    <img src="../images/genmaicha.jpg" class="thumbnail"
+                         data-name="Genmaicha"
+                         data-kcal="16oz · 160 kcal"
+                         data-desc="Nutty and toasty — this blend of green tea and roasted brown rice brings a warm, popcorn-like aroma. Light and flavorful, it’s a soothing drink that’s perfect for calm moments and cozy sips.">
+
+                    <!-- Strawberry Matcha -->
+                    <img src="../images/Strawberry matcha (1).png" class="thumbnail"
+                         data-name="Berry Blush"
+                         data-kcal="16oz · 200 kcal"
+                         data-desc="Fruity and bright — this vibrant blend combines sweet strawberry with rich matcha for a refreshing twist. Smooth and uplifting, it’s a playful take that energizes your senses with every sip.">
+
+                    <!-- Floret Dream -->
+                    <img src="../images/Floret (2).png" class="thumbnail"
+                         data-name="Floret Dream"
+                         data-kcal="16oz · 210 kcal"
+                         data-desc="Floral and delicate — this dreamy blend of lavender and rose-infused matcha creates a calm, fragrant cup. Light and serene, it’s designed to bring a moment of peace to your daily routine.">
+
+                </div>
+                <button class="slider-arrow" id="slide-right">&#10095;</button>
+            </div>
+        </div>
+
+        <!-- Right Side: Description Panel -->
+        <div class="product-info">
+            <h2 id="product-name">Citrus Bloom Matcha</h2>
+            <div class="kcal-btn" id="product-kcal">16oz · 222 kcal</div>
+            <p id="product-desc">
+                A bright twist on tradition — this blend pairs our signature matcha with a hint of yuzu and lemon for a crisp, refreshing finish. Light and energizing without the buzz, it’s the perfect sip for sunny days.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-columns">
+            <div>
+                <h3>Noka Matcha</h3>
+                Rooted in calm, crafted with care.<br /><br />
+                <a href="https://www.instagram.com/noka_matcha?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61576565212230" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.tiktok.com/@noka_matcha?_t=ZS-8wVO3KAIa0e&_r=1" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <div class="footer-line">
+                    <i class="fas fa-phone"></i>
+                    <span>+6 03 8996 1000 (Ext. 5831)</span>
+                </div>
+                <div class="footer-line">
+                    <i class="fas fa-envelope"></i>
+                    <span>contact@nokamatcha.com</span>
+                </div>
+            </div>
+            <div>
+                <h3>Location</h3>
+                <div class="footer-line">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Jalan Teknologi 5,</span>
+                </div>
+                <div class="footer-line">
+                    <i></i>
+                    <span>Taman Teknologi Malaysia,</span>
+                </div>
+                <div class="footer-line">
+                    <i></i>
+                    <span>57000 Kuala Lumpur,</span>
+                </div>
+                <div class="footer-line">
+                    <i></i>
+                    <span>Wilayah Persekutuan Kuala Lumpur</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Noka Matcha. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="../js/fadeinscroll.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/citrusbloom.js"></script>
+</body>
+</html>

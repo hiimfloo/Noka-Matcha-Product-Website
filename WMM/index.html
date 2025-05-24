@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Noka Matcha - Home</title>
+    <link href="/css/StyleSheet.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Roboto+Flex:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=DM+Sans:wght@500;600&family=Roboto+Flex:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <img src="../images/noka-logo.png" alt="NOKA Logo" class="logo" />
+            <nav class="nav-links">
+                <a href="../index.html">Home</a>
+                <!--About-->
+                <div class="nav-dropdown">
+                    <button class="dropbtn about-btn">
+                        About <i id="about-icon" class="fas fa-plus"></i>
+                    </button>
+                    <div class="dropdown-content about-dropdown">
+                        <a href="/pages/AboutNoka.html">About Noka</a>
+                        <a href="/pages/AboutMatcha.html">About the Matcha</a>
+                        <a href="/pages/aboutus.html">About Us</a>
+                    </div>
+                </div>
+                <!-- Products dropdown -->
+                <div class="nav-dropdown">
+                    <button class="dropbtn products-btn">
+                        Products <i id="products-icon" class="fas fa-plus"></i>
+                    </button>
+                    <div class="dropdown-content products-dropdown">
+                        <a href="/pages/main_product.html">All Products</a>
+                        <a href="/pages/gallery.html">Gallery</a>
+                        <a href="pages/recipeguide.html">Recipe</a>
+                    </div>
+                </div>
+
+                <a href="/pages/comparison.html">Comparison</a>
+                <div class="nav-dropdown">
+                    <button class="dropbtn contacts-btn">
+                        Contacts <i id="contacts-icon" class="fas fa-plus"></i>
+                    </button>
+                    <div class="dropdown-content contacts-dropdown">
+
+                        <a href="/pages/contact.html">Contact</a>
+                        <a href="/pages/faq.html">FAQ</a>
+                        <a href="/pages/socmed.html">Social Media</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Hero Carousel Section -->
+    <section class="hero-carousel">
+        <div class="hero-carousel-container">
+            <!-- Slide 1 -->
+            <div class="carousel-slide slide-1">
+                <div class="hero-text slide-1-text">
+                    <h1>a slower sip,<br>a better day.</h1>
+                    <p>Start your day the Noka way.</p>
+                </div>
+            </div>
+
+            <!-- Slide 2: Seasonal Drinks Layout -->
+            <div class="carousel-slide slide-2">
+                <div class="hero-text slide-2-text">
+                    <h1>Seasonal Drinks</h1>
+                    <p>Coming soon on 20th May 2025.</p>
+                </div>
+            </div>
+
+            <!-- Slide 3: Model Portrait Layout -->
+            <div class="carousel-slide slide-3">
+                <!-- No text -->
+            </div>
+        </div>
+
+        <!-- Arrows -->
+        <a class="hero-prev">&#10094;</a>
+        <a class="hero-next">&#10095;</a>
+
+        <!-- Dots -->
+        <div class="hero-dots">
+            <span class="hero-dot" data-index="0"></span>
+            <span class="hero-dot" data-index="1"></span>
+            <span class="hero-dot" data-index="2"></span>
+        </div>
+    </section>
+
+
+
+
+    <!-- About Noka Section -->
+    <section class="about-section">
+        <div class="about-container">
+            <div class="about-img" data-aos="fade-right" data-aos-duration="1000"></div>
+            <div class="about-text" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                <h2 class="about-heading">
+                    <span class="align-left">Rooted in calm,</span><br>
+                    <span class="align-right">brewed with care.</span>
+                </h2>
+                <p>
+                    Here, we’re more than a drink—we’re a lifestyle of calm and connection.
+                    Founded by four friends who love matcha and minimalist living, we craft
+                    each drink with natural ingredients and thoughtful design to inspire a
+                    slower, more intentional life.
+                </p>
+                <div class="btn-wrapper" data-aos="fade-up" data-aos-delay="400">
+                    <a href="pages/AboutNoka.html" class="btn about-section-btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Matcha Collection Carousel Section -->
+    <section class="collection-section">
+        <div class="collection-container">
+            <div class="collection-text" data-aos="fade-right" data-aos-duration="1000">
+                <h2>Our Matcha Collection</h2>
+                <p>
+                    Discover our thoughtfully crafted drinks—from creamy matcha lattes to seasonal favorites—
+                    each made to bring a little calm and clarity to your day.
+                </p>
+                <a href="pages/main_product.html" class="btn matcha-btn" data-aos="fade-up" data-aos-delay="200">
+                    <span class="arrow">➝</span> Browse the Full Menu
+                </a>
+               
+            </div>
+            <div class="carousel-wrapper" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+                <div class="carousel-track">
+                    <img src="images/NOKA MATCHA.png" class="carousel-item" alt="Noka Matcha" />
+                    <img src="images/BERRY BLUSH.png" class="carousel-item" alt="Berry Blush" />
+                    <img src="images/FLORET DREAM.png" class="carousel-item" alt="Floret Dream" />
+                    <img src="images/HOUJICHA.png" class="carousel-item" alt="Houjicha" />
+                    <img src="images/GENMAICHA.png" class="carousel-item" alt="Genmaicha" />
+                    <img src="images/CITRUS BLOOM.png" class="carousel-item" alt="Citrus Bloom" />
+                </div>
+                <div class="carousel-dots" style="display: none;"></div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <h2>Testimonials</h2>
+        <div class="cards">
+            <div class="card" data-aos="fade-up" data-aos-delay="100">
+                <p><em>"I've tried many matcha brands, but <strong>Noka</strong> is the smoothest by far. It’s now part of my daily ritual and helps me feel focused."</em></p>
+                <div class="name">— Emily Tan<br><span class="stars">★★★★★</span></div>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-delay="300">
+                <p><em>"What really stood out to me was <strong>Noka’s</strong> story: minimalist, but meaningful. You can tell there’s care behind every cup. Plus, it tastes amazing!"</em></p>
+                <div class="name">— Daniel Lee<br><span class="stars">★★★★★</span></div>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-delay="500">
+                <p><em>"I wasn’t into matcha until <strong>Noka</strong>. Now I drink it daily instead of coffee. It gives me energy without the crash and has such aesthetic packaging!"</em></p>
+                <div class="name">— Aisha Karim<br><span class="stars">★★★★★</span></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Social Media Section -->
+    <section class="social">
+        <div class="social-content">
+            <div class="social-image" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"></div>
+            <div class="social-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <h2>Share your Noka journey with us on social media!</h2>
+                <a href="pages/aboutus.html" class="social-btn" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">Follow Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-columns">
+            <div>
+                <h3>Noka Matcha</h3>
+                Rooted in calm, crafted with care.<br /><br />
+                <a href="https://www.instagram.com/noka_matcha?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61576565212230" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.tiktok.com/@noka_matcha?_t=ZS-8wVO3KAIa0e&_r=1" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <div class="footer-line">
+                    <i class="fas fa-phone"></i>
+                    <span>+6 03 8996 1000 (Ext. 5831)</span>
+                </div>
+                <div class="footer-line">
+                    <i class="fas fa-envelope"></i>
+                    <span>contact@nokamatcha.com</span>
+                </div>
+            </div>
+            <div>
+                <h3>Location</h3>
+                <div class="footer-line">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Jalan Teknologi 5,</span>
+                </div>
+                <div class="footer-line">
+                    <i></i>
+                    <span>Taman Teknologi Malaysia,</span>
+                </div>
+                <div class="footer-line">
+                    <i></i>
+                    <span>57000 Kuala Lumpur,</span>
+                </div>
+                <div class="footer-line">
+                    <i></i>
+                    <span>Wilayah Persekutuan Kuala Lumpur</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Noka Matcha. All rights reserved.
+        </div>
+    </footer>
+
+
+    <script src="js/JavaScript.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/matcha_collection.js"></script>
+
+</body>
+</html>

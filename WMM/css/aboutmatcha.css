@@ -1,0 +1,113 @@
+﻿body {
+    margin: 0;
+    font-family: 'Roboto Flex', sans-serif;
+    background-color: #F9F7F1;
+    color: #333;
+}
+
+h2, h3, h4 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #333829;
+}
+
+
+
+/* Hero Sections */
+.matcha-hero {
+    position: relative;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.matcha-hero-1 {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('../images/FY1052 1.png');
+
+}
+
+.matcha-hero-2 {
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.1), rgba(0,0,0,0.7)), url('../images/FY1064 1.png');
+    
+}
+
+.matcha-hero-3 {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.7)), url('../images/FY1095 1.png');
+
+}
+
+.hero-content {
+    max-width: 700px;
+    color: #F9F7F1;
+}
+
+    .hero-content h2 {
+        font-size: 42px;
+        margin-bottom: 20px;
+        color: #F9F7F1;
+        text-align: center;
+        font-family: "Cormorant Garamond";
+    }
+
+    .hero-content p {
+        font-size: 18px;
+        line-height: 1.6;
+        font-family: "Roboto Flex";
+        text-align: center;
+    }
+
+/* Origin Section */
+.origin-section {
+    background-color: #f8f6f0;
+    padding: 80px 10%;
+    text-align: center;
+}
+
+    .origin-section h3 {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+.origin-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.origin-card {
+    background: #EDDDC0;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+    .origin-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .origin-card img {
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 12px;
+        margin-bottom: 12px;
+    }
+
+    .origin-card h4 {
+        margin-bottom: 8px;
+        font-size: 18px;
+    }
+
+    .origin-card p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
