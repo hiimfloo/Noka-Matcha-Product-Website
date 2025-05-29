@@ -16,6 +16,13 @@
 
 </head>
 <body>
+    <script>
+        // Redirect only once per session
+        if (!sessionStorage.getItem("hasRedirected")) {
+            sessionStorage.setItem("hasRedirected", "true");
+            window.location.href = "pages/intro.html";
+        }
+    </script>
     <header>
         <div class="nav-container">
             <img src="images/noka-logo.png" alt="NOKA Logo" class="logo" />
@@ -135,7 +142,7 @@
                 <a href="pages/main_product.html" class="btn matcha-btn" data-aos="fade-up" data-aos-delay="200">
                     <span class="arrow">➝</span> Browse the Full Menu
                 </a>
-               
+
             </div>
             <div class="carousel-wrapper" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
                 <div class="carousel-track">
