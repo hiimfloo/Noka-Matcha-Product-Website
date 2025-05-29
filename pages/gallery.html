@@ -63,9 +63,15 @@
 
         <!--Gallery Pics-->
         <section class="gallery-section scroll-fade-in">
-            <h2 class="gallery-title">Gallery</h2>
-            <p class="gallery-text">A glimpse of what we do.</p>
-            <div class="gallery-grid">
+            <h2 class="gallery-title" style="font-size: 50px;">Gallery</h2>
+            <p class="gallery-text" style="font-size: 20px;">A glimpse of what we do.</p>
+            <div class="gallery-grid" style="
+                 display: grid;
+                 grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+                 gap: 3px;
+                 margin-top: 50px;
+                 padding: 0 120px;
+                 box-sizing: border-box;">
                 <img src="../images/gallery-preview/1.png" alt="Matcha 1" class="gallery-img" />
                 <img src="../images/gallery-preview/2.png" alt="Matcha 2" class="gallery-img" />
                 <img src="../images/gallery-preview/3.png" alt="Matcha 3" class="gallery-img" />
@@ -75,16 +81,18 @@
                 <img src="../images/gallery-preview/7.png" alt="Matcha 7" class="gallery-img" />
                 <img src="../images/gallery-preview/8.png" alt="Matcha 8" class="gallery-img" />
                 <img src="../images/gallery-preview/9.png" alt="Matcha 9" class="gallery-img" />
-            </div>
+             </div>
         </section>
 
-        <!-- Lightbox Modal -->
-        <div id="lightbox" class="lightbox">
-            <span class="close">&times;</span>
-            <img class="lightbox-img" id="lightbox-img">
-            <div class="nav-arrow left" id="prev">&#10094;</div>
-            <div class="nav-arrow right" id="next">&#10095;</div>
-        </div>
+        
+
+            <!-- Lightbox Modal -->
+            <div id="lightbox" class="lightbox">
+                <span class="close">&times;</span>
+                <img class="lightbox-img" id="lightbox-img">
+                <div class="nav-arrow left" id="prev">&#10094;</div>
+                <div class="nav-arrow right" id="next">&#10095;</div>
+            </div>
     </main>
 
     <!-- Footer -->

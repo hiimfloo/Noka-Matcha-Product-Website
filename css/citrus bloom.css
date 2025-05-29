@@ -87,7 +87,7 @@ header {
 
 .dropdown-content {
     position: absolute;
-    top: calc(100% + 8px); /* 👈 dropdown appears below nav bar */
+    top: calc(100% + 8px); 
     left: 0;
     min-width: 140px;
     background-color: #C7D3B7;
