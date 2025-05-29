@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noka Intro</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            background: black;
+            font-family: 'Roboto Flex', sans-serif;
+        }
+
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+        }
+
+        .explore-btn {
+            position: absolute;
+            bottom: 60px;
+            right: 45px;
+            background-color: #798f5a;
+            color: white;
+            border: none;
+            padding: 25px 50px;
+            font-size: 1.8rem;
+            border-radius: 15px;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 1.5s ease;
+            z-index: 2;
+        }
+
+            .explore-btn.show {
+                opacity: 1;
+            }
+
+            .explore-btn:hover {
+                background-color: #6a7e4f;
+            }
+
+        .sound-btn {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            background-color: rgba(110, 75, 58, 0.85); 
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 1rem;
+            border-radius: 10px;
+            cursor: pointer;
+            z-index: 2;
+        }
+
+    </style>
+</head>
+<body>
+
+    <video id="introVideo" autoplay muted playsinline>
+        <source src="../videos/nokaintro.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+    </video>
+
+    <button class="sound-btn" id="soundBtn">🔊 Sound On</button>
+    <button class="explore-btn" id="exploreBtn">Explore</button>
+
+    <script>
+        const video = document.getElementById("introVideo");
+        const exploreBtn = document.getElementById("exploreBtn");
+        const soundBtn = document.getElementById("soundBtn");
+
+        // Show explore button after 2 seconds
+        setTimeout(() => {
+            exploreBtn.classList.add("show");
+        }, 2000);
+
+        // Explore button navigation
+        exploreBtn.addEventListener("click", () => {
+            window.location.href = "../index.html";
+        });
+
+        // Redirect when video ends
+        video.addEventListener("ended", () => {
+            window.location.href = "../index.html";
+        });
+
+        // Enable sound on user interaction
+        soundBtn.addEventListener("click", () => {
+            video.muted = false;
+            video.play(); // replay if needed
+            soundBtn.style.display = "none"; // hide sound button after unmuting
+        });
+    </script>
+
+</body>
+</html>
