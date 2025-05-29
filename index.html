@@ -16,7 +16,13 @@
 
 </head>
 <body>
-   
+    <script>
+        if (!sessionStorage.getItem("hasRedirected")) {
+            sessionStorage.setItem("hasRedirected", "true");
+            window.location.href = "pages/intro.html";
+        }
+    </script>
+
     <header>
         <div class="nav-container">
             <img src="images/noka-logo.png" alt="NOKA Logo" class="logo" />
