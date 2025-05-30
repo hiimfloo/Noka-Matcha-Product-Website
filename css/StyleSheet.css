@@ -754,3 +754,55 @@ a.social-icon:hover i {
     color: #7c935e;
     transition: color 0.3s ease;
 }
+
+.bts-video {
+    padding: 40px;
+    background-color: #fefcf8;
+}
+
+    .bts-video h2 {
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+
+.bts-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: nowrap; /* prevent stacking on desktop */
+}
+
+.bts-media video {
+    width: 480px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.bts-description {
+    max-width: 500px;
+    flex: 1;
+}
+
+    .bts-description h3 {
+        font-size: 1.3em;
+        margin-bottom: 10px;
+    }
+
+    .bts-description p,
+    .bts-description blockquote {
+        font-size: 1em;
+        line-height: 1.6;
+    }
+
+    .bts-description blockquote {
+        margin: 15px 0;
+        font-style: italic;
+        color: #555;
+    }
+
+.credits {
+    font-size: 0.9em;
+    color: #888;
+}
